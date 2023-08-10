@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> LoginForm </title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="static/login.css">
+    <script>
+    // Function to redirect to the payment form with the selected product ID
+     function redirectEmail(Email) {
+     window.location.href = "/payment?Email=" + Email;
+      }
+    </script>
+
+
+    </head>
+    <body>
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+                    <form action="/login" method="post">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" name="email" class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" name="password" class="password" required>
+                        </div>
+
+                        <div class="field button-field">
+                            <input type="Submit" value="Login"  >
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="/signup">Signup</a></span>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </body>
+</html>
